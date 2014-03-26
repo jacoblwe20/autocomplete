@@ -17,7 +17,7 @@
     "visionmedia/superagent": "*",
     "matthewmueller/menu": "*",
     "component/map": "*",
-    "component/to-function": "*",
+    "andyburke/to-function": "*",
     "component/classes": "*"
   },
   "development": {},
