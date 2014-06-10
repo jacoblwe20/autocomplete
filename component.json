@@ -4,7 +4,7 @@
   "author": "Matt Mueller <mattmuelle@gmail.com>",
   "twitter": "@mattmueller",
   "description": "Autocomplete component",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "autocomplete",
     "component",
@@ -15,7 +15,7 @@
     "component/event": "*",
     "component/emitter": "*",
     "visionmedia/superagent": "*",
-    "andyburke/menu": "0.1.2",
+    "andyburke/menu": "0.1.3",
     "component/map": "*",
     "andyburke/to-function": "*",
     "component/classes": "*"

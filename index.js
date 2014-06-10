@@ -222,7 +222,12 @@ Autocomplete.prototype.search = function(fn) {
  * @api public
  */
 
-Autocomplete.prototype.select = function(value) {
+Autocomplete.prototype.select = function(value, label) {
+  if (typeof(label) != 'undefined') {
+    value = label;
+  }
+  this.el.value = value;
+  this.el.focus();
   this.emit('select', value);
   return this;
 };
@@ -302,19 +307,14 @@ Autocomplete.prototype.respond = function(fn, query, res) {
   menu.el.addClass('autocomplete');
 
   // Reset the menu
-  this.menu.hide().clear().off('select');
+  this.menu.hide().clear().off( 'select', this.select.bind( this ) );
 
   labels.forEach(function(label, i) {
     var value = values[i];
-    menu.add(format(label, query));
-    menu.on(value, function() {
-      el.value = label;
-      el.focus();
-    });
+    menu.add(value, format(label, query));
   });
 
-  // Pass select event onto autocomplete
-  menu.on('select', this.select.bind(this));
+  this.menu.on( 'select', this.select.bind( this ) );
 
   // Position the menu
   menu.moveTo(pos.x, pos.y);

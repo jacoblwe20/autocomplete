@@ -1,3 +1,8 @@
+0.1.2 / 2014-06-10
+==================
+
+ * Make sure selected event fires with correct value from menu
+
 0.1.1 / 2014-06-10
 ==================
 
