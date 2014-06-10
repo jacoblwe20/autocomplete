@@ -15,7 +15,7 @@
     "component/event": "*",
     "component/emitter": "*",
     "visionmedia/superagent": "*",
-    "jacoblwe20/menu": "*",
+    "andyburke/menu": "0.1.2",
     "component/map": "*",
     "andyburke/to-function": "*",
     "component/classes": "*"
