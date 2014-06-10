@@ -306,7 +306,7 @@ Autocomplete.prototype.respond = function(fn, query, res) {
 
   labels.forEach(function(label, i) {
     var value = values[i];
-    menu.add(value, format(label, query));
+    menu.add(format(label, query));
     menu.on(value, function() {
       el.value = label;
       el.focus();

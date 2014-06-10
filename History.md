@@ -1,3 +1,7 @@
+0.1.1 / 2014-06-10
+==================
+
+ * Allow menu to handle slugify-ing values to avoid issues with special characters
 
 0.1.0 / 2014-02-09
 ==================
