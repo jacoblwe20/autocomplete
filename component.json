@@ -15,7 +15,7 @@
     "component/event": "*",
     "component/emitter": "*",
     "visionmedia/superagent": "*",
-    "matthewmueller/menu": "*",
+    "jacoblwe20/menu": "*",
     "component/map": "*",
     "andyburke/to-function": "*",
     "component/classes": "*"
